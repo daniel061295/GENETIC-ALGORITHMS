@@ -178,3 +178,6 @@ def cuadrado(x):
 	return out
 
 implementation(25,8,100,-2,2,cuadrado,0.4,0.1)
+
+
+# so, here we go 
