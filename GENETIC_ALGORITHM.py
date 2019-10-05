@@ -165,11 +165,11 @@ def implementation (generations,bits,length,initial,final,function,reproduction,
 	x = np.linspace(initial,final,pow(2,bits)-1)
 	for n in range(x.shape[0]):
 		y.append(function(x[n]))
-	#plt.plot(x,y)
+	plt.plot(x,y)
 	best = show(population1,generations)
-	#plt.plot(best[0],function(best[0]),'rx')
-	plt.bar(best[2], best[3], align='center', alpha=1, color='darkblue',width=0.01)
-	plt.bar(best[0], best[1], align='center', alpha=1, color='darkred',width=0.01)
+	plt.plot(best[0],function(best[0]),'rx')
+	#plt.bar(best[2], best[3], align='center', alpha=1, color='darkblue',width=0.01)
+	#plt.bar(best[0], best[1], align='center', alpha=1, color='darkred',width=0.01)
 	plt.show()
 
 ############################################FINAL OF AG##############################################################
@@ -179,5 +179,3 @@ def cuadrado(x):
 
 implementation(25,8,100,-2,2,cuadrado,0.4,0.1)
 
-
-# so, here we go 
